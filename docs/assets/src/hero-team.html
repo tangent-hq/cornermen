@@ -1,0 +1,61 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html,body{margin:0;overflow:hidden;background:#11151B;}
+  body{width:1600px;height:900px;font-family:Inter,"Helvetica Neue","DejaVu Sans",Arial,sans-serif;color:#F4F6F8;position:relative}
+  h1{position:absolute;left:80px;top:62px;margin:0;font-size:104px;font-weight:800;letter-spacing:-2.5px;line-height:1}
+  .card{position:absolute;width:300px;height:124px;background:#1D2530;border-radius:18px;display:flex;align-items:center;gap:22px;padding:0 28px;box-sizing:border-box;border:2px solid transparent}
+  .card span{font-size:44px;font-weight:700}
+  .card svg{flex:none}
+  .core{position:absolute;left:600px;top:330px;width:400px;height:330px;background:#1D2530;border:2.5px solid #F4F6F8;border-radius:22px;box-sizing:border-box;padding:30px 32px}
+  .core .t{font-size:44px;font-weight:800}
+  .week{display:grid;grid-template-columns:repeat(7,1fr);gap:9px;margin-top:26px;height:180px}
+  .col{background:#151B23;border-radius:8px;position:relative;overflow:hidden}
+  .col i{position:absolute;left:6px;right:6px;border-radius:5px;display:block}
+  .d{font-size:15px;color:#657184;text-align:center;margin-top:8px;font-weight:600}
+  .days{display:grid;grid-template-columns:repeat(7,1fr);gap:9px}
+  .plus{position:absolute;left:1240px;top:770px;width:280px;height:70px;border:2px dashed #657184;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;color:#8b96a8;font-weight:600}
+</style></head><body>
+<h1>Your goals have a team</h1>
+
+<svg width="1600" height="900" style="position:absolute;left:0;top:0" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#657184" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M380 362 C 480 362, 500 420, 600 430"/>
+    <path d="M380 652 C 480 652, 500 590, 600 570"/>
+    <path d="M1220 362 C 1120 362, 1100 420, 1000 430"/>
+    <path d="M1220 652 C 1120 652, 1100 590, 1000 570"/>
+  </g>
+  <g fill="#657184"><circle cx="600" cy="430" r="6"/><circle cx="600" cy="570" r="6"/><circle cx="1000" cy="430" r="6"/><circle cx="1000" cy="570" r="6"/></g>
+</svg>
+
+<!-- left -->
+<div class="card" style="left:80px;top:300px;border-color:#85C99D33">
+  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#85C99D" stroke-width="2" stroke-linecap="round"><path d="M6 7v10M3.5 9.5v5M18 7v10M20.5 9.5v5M6 12h12"/></svg>
+  <span style="color:#85C99D">Fitness</span></div>
+<div class="card" style="left:80px;top:590px;border-color:#83B8ED33">
+  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#83B8ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6M13.5 4l-3 16"/></svg>
+  <span style="color:#83B8ED">Builder</span></div>
+<!-- right -->
+<div class="card" style="left:1220px;top:300px;border-color:#E7AD8E33">
+  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#E7AD8E" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8" r="3.2"/><circle cx="16.5" cy="9" r="2.6"/><path d="M2.5 20c0-3.6 2.7-6 6-6s6 2.4 6 6M14.5 14.6c3.2-.4 6.5 1.6 6.5 5.4"/></svg>
+  <span style="color:#E7AD8E">Social</span></div>
+<div class="card" style="left:1220px;top:590px;border-color:#B4A1DE33">
+  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#B4A1DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M15.8 8.2l-2 5.6-5.6 2 2-5.6z"/></svg>
+  <span style="color:#B4A1DE">Vision</span></div>
+
+<!-- coordinator + week -->
+<div class="core">
+  <div class="t">Coordinator</div>
+  <div class="week">
+    <div class="col"><i style="top:20px;height:34px;background:#85C99D"></i><i style="top:118px;height:30px;background:#83B8ED"></i></div>
+    <div class="col"><i style="top:70px;height:40px;background:#83B8ED"></i></div>
+    <div class="col"><i style="top:20px;height:34px;background:#85C99D"></i></div>
+    <div class="col"><i style="top:96px;height:46px;background:#E7AD8E"></i></div>
+    <div class="col"><i style="top:20px;height:34px;background:#85C99D"></i></div>
+    <div class="col"><i style="top:14px;height:52px;background:#83B8ED"></i><i style="top:112px;height:44px;background:#E7AD8E"></i></div>
+    <div class="col"><i style="top:40px;height:34px;background:#B4A1DE"></i></div>
+  </div>
+  <div class="days"><div class="d">M</div><div class="d">T</div><div class="d">W</div><div class="d">T</div><div class="d">F</div><div class="d">S</div><div class="d">S</div></div>
+</div>
+
+<div class="plus">+ add your own</div>
+</body></html>

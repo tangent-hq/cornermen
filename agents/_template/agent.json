@@ -1,0 +1,16 @@
+{
+  "title": "__TITLE__",
+  "tagline": "__TAGLINE__",
+  "description": "__TITLE__: __TAGLINE__.",
+  "budget": "max 1 unprompted message per week",
+  "asks_on": "__ASKS_ON__",
+  "planning_extra": "",
+  "routines": [
+    {
+      "slug": "Weekly check",
+      "schedule": "0 18 * * 3",
+      "deliver": "telegram",
+      "prompt": "Weekly check. Read __NAME__/summary.md, __NAME__/log.md and the area files in __NAME__/. If something needs the user's attention this week (a deadline, a drift from the plan, a decision), send it in max 4 lines: what, why now, one concrete next step or one yes/no question. Otherwise reply exactly [SILENT]. Update summary.md if anything changed."
+    }
+  ]
+}

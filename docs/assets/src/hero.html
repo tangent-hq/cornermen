@@ -1,0 +1,78 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html,body{margin:0;overflow:hidden;background:#11151B;}
+  body{width:1600px;height:900px;font-family:Inter,"Helvetica Neue","DejaVu Sans",Arial,sans-serif;color:#F4F6F8}
+  text{font-family:Inter,"Helvetica Neue","DejaVu Sans",Arial,sans-serif}
+</style></head><body>
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <text x="80" y="140" font-size="86" font-weight="800" fill="#F4F6F8" letter-spacing="-1.5">Your corner. Between rounds.</text>
+
+  <!-- ring floor, corner at top right -->
+  <polygon points="1380,470 80,900 1600,900 1600,620" fill="#1D2530"/>
+  <!-- ropes along the back edges -->
+  <g stroke="#F4F6F8" stroke-width="7" stroke-linecap="round">
+    <line x1="1380" y1="410" x2="80" y2="840"/>
+    <line x1="1380" y1="350" x2="80" y2="780"/>
+    <line x1="1380" y1="290" x2="80" y2="720"/>
+  </g>
+  <g stroke="#F4F6F8" stroke-width="7" stroke-linecap="round" opacity=".5">
+    <line x1="1380" y1="410" x2="1600" y2="560"/>
+    <line x1="1380" y1="350" x2="1600" y2="500"/>
+    <line x1="1380" y1="290" x2="1600" y2="440"/>
+  </g>
+  <rect x="1362" y="262" width="36" height="380" rx="8" fill="#657184"/>
+  <rect x="1350" y="276" width="60" height="150" rx="14" fill="#2a3442" stroke="#F4F6F8" stroke-width="3"/>
+
+  <!-- prepared work: dashed paths from each specialist to the coordinator -->
+  <g stroke="#657184" stroke-width="3" stroke-dasharray="7,8" fill="none" stroke-linecap="round">
+    <path d="M300 321 C 360 520, 620 640, 760 720"/>
+    <path d="M585 321 C 600 520, 720 620, 820 700"/>
+    <path d="M870 321 C 880 500, 890 600, 885 700"/>
+    <path d="M1125 321 C 1120 520, 1010 620, 960 700"/>
+  </g>
+
+  <!-- specialists, behind the ropes -->
+  <g font-size="34" font-weight="700">
+    <g transform="translate(185,225)">
+      <rect width="230" height="96" rx="12" fill="#11151B" stroke="#B4A1DE" stroke-width="3"/>
+      <g transform="translate(22,26)" stroke="#B4A1DE" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="22" r="20"/><path d="M30 14l-5 13-13 5 5-13z"/></g>
+      <text x="80" y="60" fill="#B4A1DE">Vision</text>
+    </g>
+    <g transform="translate(470,225)">
+      <rect width="230" height="96" rx="12" fill="#11151B" stroke="#85C99D" stroke-width="3"/>
+      <g transform="translate(20,26)" stroke="#85C99D" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M10 10v26M3 16v14M36 10v26M43 16v14M10 23h26"/></g>
+      <text x="80" y="60" fill="#85C99D">Fitness</text>
+    </g>
+    <g transform="translate(755,225)">
+      <rect width="230" height="96" rx="12" fill="#11151B" stroke="#83B8ED" stroke-width="3"/>
+      <g transform="translate(20,26)" stroke="#83B8ED" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8L2 22l12 14M32 8l12 14-12 14M26 4l-6 36"/></g>
+      <text x="82" y="60" fill="#83B8ED">Builder</text>
+    </g>
+    <g transform="translate(1010,225)">
+      <rect width="230" height="96" rx="12" fill="#11151B" stroke="#E7AD8E" stroke-width="3"/>
+      <g transform="translate(20,28)" stroke="#E7AD8E" stroke-width="3.5" fill="none"><circle cx="16" cy="20" r="14"/><circle cx="32" cy="20" r="14"/></g>
+      <text x="82" y="60" fill="#E7AD8E">Social</text>
+    </g>
+  </g>
+
+  <!-- inside the ring: coordinator with one note, next to the empty stool -->
+  <g transform="translate(740,700)">
+    <rect x="-10" y="0" width="270" height="104" rx="14" fill="#11151B" stroke="#F4F6F8" stroke-width="3.5"/>
+    <rect x="95" y="-14" width="60" height="16" rx="6" fill="#11151B" stroke="#F4F6F8" stroke-width="3.5"/>
+    <text x="125" y="66" font-size="36" font-weight="700" text-anchor="middle" fill="#F4F6F8">Coordinator</text>
+  </g>
+  <g transform="translate(1010,700) rotate(-8)">
+    <rect x="0" y="0" width="54" height="68" rx="6" fill="#F4F6F8"/>
+    <line x1="11" y1="20" x2="43" y2="20" stroke="#657184" stroke-width="4"/>
+    <line x1="11" y1="34" x2="43" y2="34" stroke="#657184" stroke-width="4"/>
+    <line x1="11" y1="48" x2="30" y2="48" stroke="#657184" stroke-width="4"/>
+  </g>
+  <g transform="translate(1190,690)">
+    <ellipse cx="0" cy="0" rx="74" ry="21" fill="#2a3442" stroke="#F4F6F8" stroke-width="4"/>
+    <g stroke="#F4F6F8" stroke-width="7" stroke-linecap="round">
+      <line x1="-55" y1="10" x2="-68" y2="150"/><line x1="55" y1="10" x2="68" y2="150"/><line x1="0" y1="21" x2="0" y2="158"/>
+    </g>
+    <line x1="-61" y1="95" x2="61" y2="95" stroke="#657184" stroke-width="5"/>
+  </g>
+</svg>
+</body></html>

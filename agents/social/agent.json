@@ -1,0 +1,24 @@
+{
+  "name": "social",
+  "title": "Social",
+  "tagline": "relationships and shared experiences",
+  "description": "Relationships: remembers people and dates, turns intentions into concrete plans, strictest notification policy.",
+  "budget": "max 1 suggestion per week, often zero (date reminders excepted)",
+  "asks_on": "Thursday",
+  "planning_input": true,
+  "planning_extra": "Never put private details about other people into next-week.md: scheduling facts only. ",
+  "routines": [
+    {
+      "slug": "Date guard",
+      "schedule": "30 9 * * *",
+      "deliver": "telegram",
+      "prompt": "Date guard. Read social/events.md and social/people.md. If a birthday, anniversary or key date is today, tomorrow or exactly 7 days away AND it needs an action the user hasn't logged (gift, message, booking), send one line on what and one concrete suggestion, and offer to draft the message. Otherwise reply exactly [SILENT]."
+    },
+    {
+      "slug": "Thursday scan",
+      "schedule": "0 18 * * 4",
+      "deliver": "telegram",
+      "prompt": "Thursday scan. Look at the coming weekend, dates in the next 21 days, travel in the calendar (if connected; the read command is under Integrations in shared/system.md), and people overdue for contact. Send at most ONE genuinely strong, specific suggestion (what, why now, the first small step), or one onboarding question from social/questions.md if onboarding is still open. Generic ideas are worse than silence: if nothing is strong, reply exactly [SILENT]."
+    }
+  ]
+}

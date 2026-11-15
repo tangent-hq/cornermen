@@ -1,0 +1,73 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html,body{margin:0;overflow:hidden;background:#020617;}
+  body{width:1600px;height:820px;font-family:"JetBrains Mono","DejaVu Sans Mono",Menlo,monospace;color:#e2e8f0;
+       background-image:linear-gradient(#1e293b 0.6px,transparent 0.6px),linear-gradient(90deg,#1e293b 0.6px,transparent 0.6px);background-size:40px 40px;}
+  .wrap{padding:44px 56px;}
+  h1{margin:0;font-size:26px;color:#f8fafc;display:flex;align-items:center;gap:14px}
+  h1 i{width:14px;height:14px;border-radius:50%;background:#34d399;display:inline-block}
+  .sub{color:#94a3b8;font-size:15px;margin:10px 0 30px}
+  .grid{display:grid;grid-template-columns:170px repeat(7,1fr);gap:8px;}
+  .day{font-size:14px;color:#cbd5e1;text-align:center;padding:8px 0;border-bottom:1px solid #334155;font-weight:700}
+  .day.we{color:#fde68a}
+  .who{font-size:15px;font-weight:700;display:flex;align-items:center;padding-left:6px;min-height:84px}
+  .cell{min-height:84px;display:flex;flex-direction:column;gap:6px;padding:6px 0;border-bottom:1px dashed #1e293b}
+  .chip{font-size:11.5px;padding:7px 9px;border-radius:7px;line-height:1.3;border:1.4px solid}
+  .chip b{display:block;font-size:12px}
+  .silent{border-style:dashed;opacity:.8}
+  .co{color:#fde68a;border-color:#fbbf24;background:rgba(120,53,15,.35)}
+  .vi{color:#ddd6fe;border-color:#a78bfa;background:rgba(76,29,149,.4)}
+  .fi{color:#a7f3d0;border-color:#34d399;background:rgba(6,78,59,.4)}
+  .bu{color:#a5f3fc;border-color:#22d3ee;background:rgba(8,51,68,.45)}
+  .so{color:#fecdd3;border-color:#fb7185;background:rgba(136,19,55,.4)}
+  .legend{margin-top:24px;display:flex;gap:34px;font-size:13px;color:#94a3b8;align-items:center}
+  .legend span.box{display:inline-block;width:34px;height:16px;border-radius:5px;border:1.4px solid #94a3b8;vertical-align:middle;margin-right:8px}
+  .legend span.box.d{border-style:dashed}
+</style></head><body><div class="wrap">
+<h1><i></i>The weekly rhythm</h1>
+<div class="sub">The starter team's week. Specialists work on their own schedules, align through files on Friday night, and you approve one plan on Saturday.</div>
+<div class="grid">
+  <div></div><div class="day">Mon</div><div class="day">Tue</div><div class="day">Wed</div><div class="day">Thu</div><div class="day">Fri</div><div class="day we">Sat</div><div class="day we">Sun</div>
+
+  <div class="who" style="color:#fde68a">Coordinator</div>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+  <div class="cell"><div class="chip co"><b>09:00 weekly plan</b>merges every ask + calendar. "Approve?"</div></div>
+  <div class="cell"></div>
+
+  <div class="who" style="color:#a5f3fc">Builder</div>
+  <div class="cell"></div>
+  <div class="cell"><div class="chip bu silent"><b>radar</b>sources you care about</div></div>
+  <div class="cell"><div class="chip bu silent"><b>13:00 build</b>real work on the milestone</div></div>
+  <div class="cell"></div>
+  <div class="cell"><div class="chip bu silent"><b>radar + build</b>prepares weekend.md</div><div class="chip bu silent"><b>20:00 input</b></div></div>
+  <div class="cell"><div class="chip bu"><b>10:30 session</b>2 go/no-gos + 1 thing to do</div></div>
+  <div class="cell"></div>
+
+  <div class="who" style="color:#a7f3d0">Fitness</div>
+  <div class="cell"><div class="chip fi"><b>20:30 check-in</b>only on session days</div></div>
+  <div class="cell"></div>
+  <div class="cell"><div class="chip fi"><b>20:30 check-in</b>only if nothing logged</div></div>
+  <div class="cell"></div>
+  <div class="cell"><div class="chip fi silent"><b>20:00 input</b>next week's sessions</div></div>
+  <div class="cell"></div>
+  <div class="cell"><div class="chip fi"><b>check-in</b></div></div>
+
+  <div class="who" style="color:#fecdd3">Social</div>
+  <div class="cell"><div class="chip so silent"><b>09:30 date guard</b>daily, rarely speaks</div></div>
+  <div class="cell"></div><div class="cell"></div>
+  <div class="cell"><div class="chip so"><b>18:00 scan</b>max 1 strong idea</div></div>
+  <div class="cell"><div class="chip so silent"><b>20:00 input</b></div></div>
+  <div class="cell"></div><div class="cell"></div>
+
+  <div class="who" style="color:#ddd6fe">Vision</div>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+  <div class="cell"><div class="chip vi silent"><b>20:00 input</b></div></div>
+  <div class="cell"></div>
+  <div class="cell"><div class="chip vi"><b>10:30 one question</b>+ monthly trajectory check</div></div>
+</div>
+<div class="legend">
+  <div><span class="box"></span>may message you (if worth it)</div>
+  <div><span class="box d"></span>silent: writes files, answers [SILENT]</div>
+  <div>quiet hours 22:00 to 08:00. every time is your local timezone.</div>
+</div>
+</div></body></html>

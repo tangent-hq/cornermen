@@ -1,0 +1,9 @@
+{
+  "description": "For building in public: side projects plus a dedicated distribution specialist.",
+  "agents": [
+    "coordinator",
+    "vision",
+    "builder",
+    "distributor"
+  ]
+}

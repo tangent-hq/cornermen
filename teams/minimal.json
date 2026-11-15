@@ -1,0 +1,7 @@
+{
+  "description": "Start small: a coordinator and one specialist. Add more later with --add.",
+  "agents": [
+    "coordinator",
+    "fitness"
+  ]
+}

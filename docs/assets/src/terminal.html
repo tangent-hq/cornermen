@@ -1,0 +1,69 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;overflow:hidden;background:#020617}
+body{width:1600px;height:900px;display:flex;gap:28px;padding:40px 46px;box-sizing:border-box;font-family:"JetBrains Mono","DejaVu Sans Mono",Menlo,monospace;
+ background-image:linear-gradient(#1e293b 0.6px,transparent 0.6px),linear-gradient(90deg,#1e293b 0.6px,transparent 0.6px);background-size:40px 40px}
+.term{flex:1;background:#0b1120;border:1.5px solid #334155;border-radius:14px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.5);display:flex;flex-direction:column}
+.bar{height:38px;background:#111827;display:flex;align-items:center;gap:8px;padding:0 16px;border-bottom:1px solid #1f2937;flex:none}
+.bar i{width:12px;height:12px;border-radius:50%;display:block}
+.bar span{margin-left:12px;color:#64748b;font-size:13px}
+pre{margin:0;padding:16px 20px;font-size:13.2px;line-height:1.48;color:#cbd5e1;white-space:pre}
+.p{color:#34d399} .c{color:#f8fafc;font-weight:700} .g{color:#34d399} .h{color:#a5f3fc;font-weight:700} .d{color:#64748b}
+</style></head><body>
+<div class="term"><div class="bar"><i style="background:#fb7185"></i><i style="background:#fbbf24"></i><i style="background:#34d399"></i><span>first install: the starter team</span></div>
+<pre><span class="p">$</span> <span class="c">python3 scripts/install.py --timezone Europe/Berlin</span>
+<span class="g">Team: coordinator, vision, fitness, builder, social</span>
+
+<span class="h">1/4 Workspace -&gt; ~/cornermen</span>
+    42 files created, 0 existing files left untouched
+    shared/team.md: written
+
+<span class="h">2/4 Profiles</span>
+    coordinator: created
+    vision: created
+    fitness: created
+    builder: created
+    social: created
+
+<span class="h">3/4 Personas (every agent gets the current roster) + coordinator skill</span>
+    coordinator/SOUL.md: written
+    vision/SOUL.md: written
+    fitness/SOUL.md: written
+    builder/SOUL.md: written
+    social/SOUL.md: written
+    coordinator skill: written
+
+<span class="h">4/4 Routines (new ones are created paused)</span>
+    coordinator: 2 added, 0 already present
+    vision: 4 added, 0 already present
+    fitness: 3 added, 0 already present
+    builder: 5 added, 0 already present
+    social: 4 added, 0 already present
+
+<span class="g">Done.</span> <span class="d"># next steps omitted</span></pre></div>
+<div class="term" style="flex:.92"><div class="bar"><i style="background:#fb7185"></i><i style="background:#fbbf24"></i><i style="background:#34d399"></i><span>later: one more specialist</span></div>
+<pre><span class="p">$</span> <span class="c">python3 scripts/install.py --add distributor</span>
+<span class="g">Team: coordinator, vision, fitness, builder, social, distributor</span>
+
+<span class="h">1/4 Workspace -&gt; ~/cornermen</span>
+    10 files created, 22 existing files left untouched
+    shared/team.md: written
+
+<span class="h">2/4 Profiles</span>
+    distributor: created
+
+<span class="h">3/4 Personas (every agent gets the current roster) + coordinator skill</span>
+    coordinator/SOUL.md: written
+    vision/SOUL.md: written
+    fitness/SOUL.md: written
+    builder/SOUL.md: written
+    social/SOUL.md: written
+    distributor/SOUL.md: written
+    coordinator skill: unchanged
+
+<span class="h">4/4 Routines (new ones are created paused)</span>
+    distributor: 3 added, 0 already present
+
+Done. New specialists start paused.
+Tell your coordinator what changed: it runs their kickoff and asks
+before switching their routines on (or: python3 scripts/activate.py).</pre></div>
+</body></html>

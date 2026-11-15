@@ -1,0 +1,10 @@
+{
+  "description": "The opinionated default: a coordinator plus four specialists for direction, training, side projects and relationships.",
+  "agents": [
+    "coordinator",
+    "vision",
+    "fitness",
+    "builder",
+    "social"
+  ]
+}

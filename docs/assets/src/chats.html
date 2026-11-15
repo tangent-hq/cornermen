@@ -1,0 +1,61 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html,body{margin:0;overflow:hidden;background:#0b1220;}
+  body{width:1600px;height:900px;font-family:Inter,"Segoe UI",Roboto,"DejaVu Sans",Helvetica,Arial,sans-serif;color:#e5e7eb;
+       background:radial-gradient(circle at 20% 10%,#1e293b 0,#0b1220 55%);}
+  .row{display:flex;gap:40px;justify-content:center;padding:40px 0 0}
+  .phone{width:470px;height:800px;border-radius:38px;background:#0f172a;border:2px solid #334155;box-shadow:0 30px 60px rgba(0,0,0,.45);overflow:hidden;display:flex;flex-direction:column}
+  .top{display:flex;align-items:center;gap:12px;padding:22px 22px 16px;border-bottom:1px solid #1e293b;background:#111a2e}
+  .av{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;color:#0b1220}
+  .name{font-weight:700;font-size:16px}.st{font-size:12px;color:#94a3b8;margin-top:2px}
+  .chat{flex:1;padding:18px 16px;display:flex;flex-direction:column;gap:12px;background:#0d1526}
+  .b{max-width:84%;padding:11px 13px;border-radius:16px;font-size:14px;line-height:1.45;position:relative}
+  .bot{background:#1e293b;border-top-left-radius:5px;align-self:flex-start}
+  .me{background:#2563eb;color:#fff;border-top-right-radius:5px;align-self:flex-end}
+  .t{display:block;text-align:right;font-size:10.5px;color:#94a3b8;margin-top:5px}
+  .me .t{color:#c7d2fe}
+  .day{align-self:center;font-size:11px;color:#94a3b8;background:#1e293b;padding:4px 10px;border-radius:10px}
+  .voice{display:flex;align-items:center;gap:10px}
+  .voice .play{width:28px;height:28px;border-radius:50%;background:#fff;color:#2563eb;display:flex;align-items:center;justify-content:center;font-size:12px}
+  .wave{display:flex;gap:2px;align-items:center}.wave i{width:3px;background:#c7d2fe;border-radius:2px;display:block}
+  b.k{font-weight:700}
+  .cap{text-align:center;color:#64748b;font-size:13px;margin-top:22px;font-family:"DejaVu Sans Mono",monospace}
+</style></head><body>
+<div class="row">
+  <!-- coordinator -->
+  <div class="phone">
+    <div class="top"><div class="av" style="background:#fbbf24">C</div><div><div class="name">Coordinator</div><div class="st">bot</div></div></div>
+    <div class="chat">
+      <div class="day">Saturday</div>
+      <div class="b bot"><b class="k">Weekend:</b> Sat 10:30 Builder session (45 min), 17:00 run. Sun free until dinner at your parents'.<br><br>
+        <b class="k">Week:</b><br>Mon 19:00 train<br>Tue 18:30 study block (exam in 12 days)<br>Wed 19:00 train, then Builder review (15 min)<br>Thu dinner with friends, protected<br>Fri 19:30 train<br><br>
+        <b class="k">Trade-off:</b> moved the Thursday workout to Friday so dinner stays free.<br><br>
+        Approve? I'll add these 7 events to your calendar. Or tell me what to change.<span class="t">09:00</span></div>
+      <div class="b me">swap tue and wed, otherwise yes<span class="t">11:42</span></div>
+      <div class="b bot">Done. 7 events added, Tue and Wed swapped. The other agents have their slots.<span class="t">11:43</span></div>
+    </div>
+  </div>
+  <!-- fitness -->
+  <div class="phone">
+    <div class="top"><div class="av" style="background:#34d399">F</div><div><div class="name">Fitness</div><div class="st">bot</div></div></div>
+    <div class="chat">
+      <div class="day">Wednesday</div>
+      <div class="b bot">Session day and nothing logged yet. How did it go? If the day got away from you, the 15 min hotel-room circuit counts.<span class="t">20:30</span></div>
+      <div class="b me"><div class="voice"><div class="play">▶</div><div class="wave">
+        <i style="height:8px"></i><i style="height:16px"></i><i style="height:11px"></i><i style="height:20px"></i><i style="height:9px"></i><i style="height:14px"></i><i style="height:22px"></i><i style="height:12px"></i><i style="height:7px"></i><i style="height:17px"></i><i style="height:10px"></i><i style="height:19px"></i><i style="height:8px"></i><i style="height:13px"></i><i style="height:6px"></i></div><span style="font-size:12px">0:09</span></div><span class="t">20:51</span></div>
+      <div class="b bot">Logged: legs, 4 of 5 exercises, felt tired. That's your 2nd session this week, on track for 3.<br><br>Tip for Friday: drop the last set of squats and add 5 min of walking at the end. Same stimulus, less fatigue.<span class="t">20:51</span></div>
+    </div>
+  </div>
+  <!-- builder -->
+  <div class="phone">
+    <div class="top"><div class="av" style="background:#22d3ee">B</div><div><div class="name">Builder</div><div class="st">bot</div></div></div>
+    <div class="chat">
+      <div class="day">Friday</div>
+      <div class="b bot"><b class="k">Approve?</b> The CLI tool is done: 14 tests passing, README with a 20 s demo GIF.<br><br>If you say yes, I'll make the repo public and send you a launch post draft in your voice to review. Nothing gets posted without you.<span class="t">13:41</span></div>
+      <div class="b me">yes. keep the post short<span class="t">18:02</span></div>
+      <div class="b bot">Repo is public. Draft (212 chars):<br><br><i>"Built a tiny CLI that turns voice memos into searchable notes. Runs locally, no API keys. Repo + 20 s demo below. Feedback welcome, especially the bad kind."</i><br><br>Post as is, or tweak?<span class="t">18:03</span></div>
+    </div>
+  </div>
+</div>
+<div class="cap">illustrative conversations with a fictional user</div>
+</body></html>
